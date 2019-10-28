@@ -18,6 +18,14 @@ fields:
       path: authors
   label: author
   description: Enter author of post
+- name: hero_image
+  type: file
+  config:
+    maxSize: '10'
+  label: hero image
+  description: Enter hero image for blog post here
+  default: "/content/images/elcarito-CRn-_80z4SE-unsplash.jpg"
+  hidden: false
 - name: date
   type: datetime
   label: date
@@ -28,13 +36,6 @@ fields:
     time_format: 
     display_utc: false
   default: now
-- name: hero_image
-  type: file
-  config:
-    maxSize: '10'
-  label: hero image
-  description: Enter hero image for blog post here
-  default: "/content/images/sarah-dorweiler-9Z1KRIfpBTM-unsplash.jpg"
 pages:
 - content/posts/an-essay-on-walking.md
 - content/posts/ne-te-quaesiveris-extra.md
